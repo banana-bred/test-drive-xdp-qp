@@ -13,12 +13,12 @@
 
 !# Enable support for quadruple precision
 #ifndef WITH_QP
-#define WITH_QP 0
+#define WITH_QP 1
 #endif
 
 !# Enable support for extended double precision
 #ifndef WITH_XDP
-#define WITH_XDP 0
+#define WITH_XDP 1
 #endif
 
 !> Provides a light-weight procedural testing framework for Fortran projects.
