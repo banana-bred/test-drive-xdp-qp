@@ -67,7 +67,7 @@ jobs:
       with:
         python-version: 3.8
         cache: 'pip'
-    
+
     - name: Install python dependencies
       if: ${{ ! contains(matrix.os, 'windows') }}
       run: pip install -r requirements.txt
@@ -149,7 +149,7 @@ jobs:
 
     - name: Upload package
       if: ${{ matrix.build == 'meson' && matrix.build-type != 'coverage' }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ env.PROJECT_OUTPUT }}
         path: ${{ env.PROJECT_OUTPUT }}
